@@ -3,47 +3,38 @@ import React, { useState } from "react";
 // import react slick
 import Slider from "react-slick";
 import Image from "next/image";
-import Stars from "../public/assets/Icon/stars.svg";
 import ArrowBack from "../public/assets/Icon/eva_arrow-back-fill.svg";
 import ArrowNext from "../public/assets/Icon/eva_arrow-next-fill.svg";
 
 const Testimoni = ({
   listTestimoni = [
     {
-      name: "iezh Robert",
-      image: "/assets/people-3.png",
-      city: "Warsaw",
-      country: "Poland",
-      rating: "4.5",
+      name: "Alfian Hidayat",
+      image: "/assets/man.jpg",
+      job: "Wiraswasta",
       testimoni:
-        "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best",
+        "Yang dibutuhkan kami adalah pemimpin yang jujur, dapat memahami persoalan rakyat secara mendalam dan dapat membantu pengusaha-pengusaha kecil seperti saya ini"
     },
     {
-      name: "iezh Robert",
-      image: "/assets/people-3.png",
-      city: "Warsaw",
-      country: "Poland",
-      rating: "4.5",
+      name: "Irmanisa Ikhwani",
+      image: "/assets/wanita.jpg",
+      job: "Mahasiswa",
       testimoni:
-        "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best",
+        "Pemimpin yang baik menurut saya adalah pemimpin yang jujur, bertanggung jawab, memiliki pemikiran yang out of the box namun tetap dapat memecahkan masalah yang ada",
     },
     {
-      name: "iezh Robert",
-      image: "/assets/people-3.png",
-      city: "Warsaw",
-      country: "Poland",
-      rating: "4.5",
+      name: "Rudi Usman",
+      image: "/assets/man.jpg",
+      job: "Karyawan Swasta",
       testimoni:
-        "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best",
+        "Pemimpin yang baik adalah pemimpin yang tindakannya sesuai dengan ucapannya. Mau turun ke bawah untuk melihat persoalan yang ada dan memperhatikan nasib pekerja",
     },
     {
-      name: "iezh Robert",
-      image: "/assets/people-3.png",
-      city: "Warsaw",
-      country: "Poland",
-      rating: "4.5",
+      name: "Said Banawir",
+      image: "/assets/man.jpg",
+      job: "UMKM",
       testimoni:
-        "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best",
+        "Pemimpin itu jangan hanya membela yang berduit saja, tidak boleh membeda-bedakan antar kalangan masyarakat. Intinya pemimpin harus adil seadil-adilnya",
     },
   ],
 }) => {
@@ -51,7 +42,7 @@ const Testimoni = ({
     dots: true,
     customPaging: function (i) {
       return (
-        <a className="">
+        <a className="flex">
           <span className="mx-2 rounded-l-full rounded-r-full h-4 w-4 block cursor-pointer transition-all "></span>
         </a>
       );
@@ -105,15 +96,9 @@ const Testimoni = ({
                       {listTestimonis.name}
                     </p>
                     <p className="text-sm text-black-500 capitalize">
-                      {listTestimonis.city},{listTestimonis.country}
+                      {listTestimonis.job}
                     </p>
                   </div>
-                </div>
-                <div className="flex flex-none items-center ml-auto order-1 xl:order-2">
-                  <p className="text-sm">{listTestimonis.rating}</p>
-                  <span className="flex ml-4">
-                    <Stars className="h-4 w-4" />
-                  </span>
                 </div>
               </div>
               <p className="mt-5 text-left">“{listTestimonis.testimoni}”.</p>

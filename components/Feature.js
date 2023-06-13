@@ -1,69 +1,43 @@
-import Image from "next/image";
+
 import React, { useMemo } from "react";
 import { motion } from "framer-motion";
 import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
-
-const features = [
-  "Powerfull online protection.",
-  "Internet without borders.",
-  "Supercharged VPN",
-  "No specific time limits."
-]
+import Program from "./Program";
 
 const Feature = () => {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
 
   return (
     <div
-      className="max-w-screen-xl mt-8 mb-6 sm:mt-14 sm:mb-14 px-6 sm:px-8 lg:px-16 mx-auto"
-      id="feature"
-    >
-      <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-2 gap-8 p  y-8 my-12">
-        <ScrollAnimationWrapper className="flex w-full justify-end">
-          <motion.div className="h-full w-full p-4" variants={scrollAnimation}>
-            <Image
-              src="/assets/Illustration2.png"
-              alt="VPN Illustrasi"
-              layout="responsive"
-              quality={100}
-              height={414}
-              width={508}
-            />
-          </motion.div>
-        </ScrollAnimationWrapper>
+    className="bg-gradient-to-b from-white-300 to-white-500 w-full py-14"
+    id="program"
+  >
+    <div className="max-w-screen-xl  px-6 sm:px-8 lg:px-16 mx-auto flex flex-col w-full text-center justify-center">
+      <div className="flex flex-col w-full my-16" id="program">
         <ScrollAnimationWrapper>
-
-        <motion.div className="flex flex-col items-end justify-center ml-auto w-full lg:w-9/12" variants={scrollAnimation}>
-          <h3 className="text-3xl lg:text-4xl font-medium leading-relaxed text-black-600">
-            We Provide Many Features You Can Use
-          </h3>
-          <p className="my-2 text-black-500">
-            You can explore the features that we provide with fun and have their
-            own functions each feature.
-          </p>
-          <ul className="text-black-500 self-start list-inside ml-8">
-            {features.map((feature, index) => (
-              <motion.li
-                className="relative circle-check custom-list"
-                custom={{duration: 2 + index}}
-                variants={scrollAnimation}
-                key={feature}
-                whileHover={{
-                scale : 1.1,
-                transition: {
-                  duration: .2
-                }
-                }}>
-                  {feature}
-              </motion.li>
-              )
-            )}
-          </ul>
-        </motion.div>
+          <motion.h3
+            variants={scrollAnimation}
+            className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-normal w-9/12 sm: lg:w-4/12 mx-auto"
+          >
+            Program Kerja <span className="text-red-500">Sam Andreas</span>
+          </motion.h3>
+          {/* <motion.p
+            variants={scrollAnimation}
+            className="leading-normal mx-auto mb-2 mt-4 w-10/12 sm:w-7/12 lg:w-6/12"
+          >
+            These are the stories of our customers who have joined us with
+            great pleasure when using this crazy feature.
+          </motion.p> */}
+        </ScrollAnimationWrapper>
+        <ScrollAnimationWrapper className="w-full flex flex-col py-12">
+          <motion.div variants={scrollAnimation}>
+            <Program/>
+          </motion.div>
         </ScrollAnimationWrapper>
       </div>
     </div>
+  </div>
   );
 };
 

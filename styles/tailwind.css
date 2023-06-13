@@ -3,11 +3,12 @@
 @tailwind base;
 @tailwind components;
 
+
 html {
-  font-family: "Rubik", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 body {
-  @apply bg-white-500;
+  @apply bg-white-500 ;
 }
 p {
   @apply text-black-500;
