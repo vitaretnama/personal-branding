@@ -153,7 +153,7 @@ const Header = () => {
                 setActiveLink("program");
               }}
               className={
-                "mx-1 sm:mx-2 px-3 sm:px-4 py-2 flex flex-col items-center text-xs border-t-2 transition-all " +
+                "mx-1 sm:mx-2 px-3 sm:px-2 py-2 flex flex-col items-center text-xs border-t-2 transition-all " +
                 (activeLink === "feature"
                   ? "  border-maroon-500 text-maroon-500"
                   : " border-transparent ")
