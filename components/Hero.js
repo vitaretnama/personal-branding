@@ -27,7 +27,12 @@ const Hero = ({
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
 
   return (
-    <div className="w-full bg-[url('/assets/backgroundandreas.jpg')] bg-cover bg-center">
+    <div className="w-full" style={{
+      backgroundImage: "url('/assets/backgroundandreas.jpg')",
+      backgroundSize: "cover",
+      backgroundRepeat: "no-repeat",
+      backgroundPosition: 'center'
+    }}>
       <div className="max-w-screen-xl mt-12 px-8 xl:px-16 mx-auto" id="about">
         <ScrollAnimationWrapper>
           <motion.div
@@ -50,7 +55,7 @@ const Hero = ({
                 <Image
                   quality={100}
                   width={400}
-                  height={400}
+                  height={450}
                   layout="responsive"
                 />
               </motion.div>
