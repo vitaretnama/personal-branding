@@ -8,7 +8,7 @@ const Footer = () => {
     <div className="bg-white-300 pt-44 pb-24">
       <div className="max-w-screen-xl w-full mx-auto px-6 sm:px-8 lg:px-16 grid grid-rows-6 sm:grid-rows-1 grid-flow-row sm:grid-flow-col grid-cols-2 sm:grid-cols-12 gap-4">
         <div className="row-span-2 sm:col-span-4 col-start-1 col-end-4 sm:col-end-5 flex flex-col items-start ">
-          <h1 className="text-2xl">andreassusetyo.info</h1>
+          <h1 className="text-2xl">Andreas Eddy Susetyo</h1>
           {/* <p className="mb-4">
             <strong className="font-medium">Radius</strong> is a private
             virtual network that has unique features and has high security.
@@ -37,7 +37,7 @@ const Footer = () => {
             </Link>
           </div>
           <p className="text-gray-400">
-            ©{new Date().getFullYear()} - andreassusetyo.info
+            ©{new Date().getFullYear()} - andreaseddysusetyo
           </p>
         </div>
         <div className=" row-span-2 sm:col-span-2 sm:col-start-7 sm:col-end-9 flex flex-col">
