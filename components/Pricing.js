@@ -33,7 +33,7 @@ const Pricing = () => {
           </ScrollAnimationWrapper>
           <ScrollAnimationWrapper>
             <motion.div
-              className="py-8 w-full px-8 mt-16 flex justify-center "
+              className="py-10 w-full px-8 flex justify-center "
               variants={scrollAnimation}
             >
               <RiwayatHidup />
