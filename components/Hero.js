@@ -55,7 +55,7 @@ const Hero = ({
                 <Image
                   quality={100}
                   width={400}
-                  height={450}
+                  height={400}
                   layout="responsive"
                 />
               </motion.div>
