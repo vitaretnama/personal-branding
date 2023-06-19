@@ -1,21 +1,21 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
 
-
 // Default value for some meta data
 const defaultMeta = {
-  title: 'Sam Andreas',
-  siteName: 'Sam Andreas',
-  description:
-    'Sam Andreas Nawak Milenial',
+  title: "Sam Andreas",
+  siteName: "Sam Andreas",
+  description: "Sam Andreas Nawak Milenial",
   // change base url of your web (without '/' at the end)
-  url: 'https://andreassusetyo.info',
-  type: 'website',
-  robots: 'follow, index',
+  url: "https://andreassusetyo.info",
+  type: "website",
+  robots: "follow, index",
   // change with url of your image (recommended dimension = 1.91:1)
-  // used in twitter, facebook, etc. card when link copied in tweet/status 
-  image: 'https://andreassusetyo.info/assets/backgroundandreas.jpg',
-  author: 'Lorem Ipsum'
+  // used in twitter, facebook, etc. card when link copied in tweet/status
+  image: "https://andreassusetyo.info/assets/backgroundandreas.jpg",
+  author: "Lorem Ipsum",
+  keywords:
+    "andreas eddy susetyo, sam andreas, nawak milenial, komisi 11 dpr ri, anggota dpr ri malang raya, anggota dpr ri bidang keuangan",
 };
 
 /**
@@ -39,7 +39,7 @@ const SeoHead = (props) => {
   const router = useRouter();
   const meta = {
     ...defaultMeta,
-    ...props
+    ...props,
   };
 
   // Use siteName if there is templateTitle
@@ -51,35 +51,33 @@ const SeoHead = (props) => {
   return (
     <Head>
       <title>{meta.title}</title>
-      <meta name='robots' content={meta.robots} />
-      <meta content={meta.description} name='description' />
-      <meta property='og:url' content={`${meta.url}${router.asPath}`} />
-      <link rel='canonical' href={`${meta.url}${router.asPath}`} />
+      <meta name="robots" content={meta.robots} />
+      <meta content={meta.description} name="description" />
+      <meta property="og:url" content={`${meta.url}${router.asPath}`} />
+      <meta name="keywords" content={meta.keywords} />
+      <link rel="canonical" href={`${meta.url}${router.asPath}`} />
       {/* Open Graph */}
-      <meta property='og:type' content={meta.type} />
-      <meta property='og:site_name' content={meta.siteName} />
-      <meta property='og:description' content={meta.description} />
-      <meta property='og:title' content={meta.title} />
-      <meta name='image' property='og:image' content={meta.image} />
+      <meta property="og:type" content={meta.type} />
+      <meta property="og:site_name" content={meta.siteName} />
+      <meta property="og:description" content={meta.description} />
+      <meta property="og:title" content={meta.title} />
+      <meta property="og:keywords" content={meta.keywords}/>
+      <meta name="image" property="og:image" content={meta.image} />
       {/* Twitter */}
-      <meta name='twitter:card' content='summary_large_image' />
-      <meta name='twitter:site' content='@andreassusetyo' />
-      <meta name='twitter:title' content={meta.title} />
-      <meta name='twitter:description' content={meta.description} />
-      <meta name='twitter:image' content={meta.image} />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:site" content="@andreassusetyo" />
+      <meta name="twitter:title" content={meta.title} />
+      <meta name="twitter:description" content={meta.description} />
+      <meta name="twitter:image" content={meta.image} />
       {meta.date && (
         <>
-          <meta property='article:published_time' content={meta.date} />
+          <meta property="article:published_time" content={meta.date} />
           <meta
-            name='publish_date'
-            property='og:publish_date'
+            name="publish_date"
+            property="og:publish_date"
             content={meta.date}
           />
-          <meta
-            name='author'
-            property='article:author'
-            content={meta.author}
-          />
+          <meta name="author" property="article:author" content={meta.author} />
         </>
       )}
       {/* Favicons */}
@@ -87,13 +85,13 @@ const SeoHead = (props) => {
         <link key={linkProps.href} {...linkProps} />
       ))}
       {/* Windows 8 app icon */}
-      <meta name='msapplication-TileColor' content='#F53838' />
+      <meta name="msapplication-TileColor" content="#F53838" />
       <meta
-        name='msapplication-TileImage'
-        content='/favicon/ms-icon-144x144.png'
+        name="msapplication-TileImage"
+        content="/favicon/ms-icon-144x144.png"
       />
       {/* Accent color on supported browser */}
-      <meta name='theme-color' content='#F53838' />
+      <meta name="theme-color" content="#F53838" />
     </Head>
   );
 };
@@ -101,12 +99,12 @@ const SeoHead = (props) => {
 // Favicons, other icons, and manifest definition
 const favicons = [
   {
-    rel: 'icon',
-    href: '/favicon/favicon.ico',
+    rel: "icon",
+    href: "/favicon/favicon.ico",
   },
   {
-    rel: 'manifest',
-    href: '/site.webmanifest',
+    rel: "manifest",
+    href: "/site.webmanifest",
   },
 ];
 
