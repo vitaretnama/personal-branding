@@ -37,13 +37,21 @@ const Footer = () => {
             </Link>
           </div>
           <p className="text-gray-400">
-            ©{new Date().getFullYear()} - andreaseddysusetyo
+            ©{new Date().getFullYear()} -{" "}
+            <Link href="https://studione.getradius.id/">
+              <a target="_blank" rel="noopener noreferrer">
+                Radius Supermedia
+              </a>
+            </Link>
           </p>
         </div>
         <div className=" row-span-2 sm:col-span-2 sm:col-start-7 sm:col-end-9 flex flex-col">
           <p className="text-black-600 mb-4 font-medium text-lg">Sam Andreas</p>
           <ul className="text-black-500 ">
-            <li className="my-2 hover:text-orange-500 cursor-pointer transition-all" id="riwayat">
+            <li
+              className="my-2 hover:text-orange-500 cursor-pointer transition-all"
+              id="riwayat"
+            >
               Riwayat Hidup
             </li>
             <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
@@ -52,7 +60,9 @@ const Footer = () => {
           </ul>
         </div>
         <div className="row-span-2 sm:col-span-2 sm:col-start-9 sm:col-end-11 flex flex-col">
-          <p className="text-black-600 mb-4 font-medium text-lg">Berita dan Opini</p>
+          <p className="text-black-600 mb-4 font-medium text-lg">
+            Berita dan Opini
+          </p>
           <ul className="text-black-500">
             <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
               Artikel Opini
@@ -65,17 +75,6 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        {/* <div className="row-span-2 sm:col-span-2 sm:col-start-11 sm:col-end-13 flex flex-col">
-          <p className="text-black-600 mb-4 font-medium text-lg">Earn Money</p>
-          <ul className="text-black-500">
-            <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
-              Affiliate{" "}
-            </li>
-            <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
-              Become Partner{" "}
-            </li>
-          </ul>
-        </div> */}
       </div>
     </div>
   );

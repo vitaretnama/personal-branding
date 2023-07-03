@@ -18,7 +18,7 @@ const Konten = ({
     },
     {
       image: "/assets/perkokoh.jpg",
-      link: "https://www.youtube.com/watch?v=aviAyIK5oSU",
+      link: "https://www.youtube.com/watch?v=aviAyIK5oSU", 
       text: "Andreas Ajak Untuk Memperkokoh Persatuan & Kesatuan Bangsa!",
     },
     {
