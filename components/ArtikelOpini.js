@@ -10,7 +10,7 @@ const ArtikelOpini = ({
       image: "/assets/UMKM.jpg",
       link: "https://www.gesuri.id/pemerintahan/andreas-tegaskan-umkm-miliki-peran-penting-bagi-perekonomian-tanah-air-b2hRvZD15",
       text:
-        " Andreas Tegaskan UMKM Miliki Peran Penzing Bagi Perekonomian Tanah Air",
+        " Andreas Tegaskan UMKM Miliki Peran Penting Bagi Perekonomian Tanah Air",
     },
     {
       image: "/assets/milenial.jpg",
