@@ -31,6 +31,50 @@ const Pricing = () => {
             </motion.p>
           </ScrollAnimationWrapper>
 
+          <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-2 gap-8 p  y-8 my-12">
+        <ScrollAnimationWrapper className="flex w-full justify-end">
+          <motion.div className="h-full w-full p-4" variants={scrollAnimation}>
+            <Image
+              src="/assets/bhawikarsu.jpg"
+              alt="VPN Illustrasi"
+              layout="responsive"
+              quality={100}
+              height={414}
+              width={650}
+            />
+          </motion.div>
+        </ScrollAnimationWrapper>
+        <ScrollAnimationWrapper>
+
+        <motion.div className="flex flex-col items-center justify-center ml-auto w-full lg:w-9/12" variants={scrollAnimation}>
+          <h3 className="text-3xl lg:text-4xl font-medium leading-relaxed text-black-600">
+            Sam Andreas
+          </h3>
+          <p className="my-2 text-black-500 text-justify">
+          Ir. Andreas Eddy Susetyo, M.M, Arek Malang kelahiran tanggal, 22 Maret 1960, sejak kecil sampai lulus SMA dibesarkan di Malang. Menempuh pendidikan di SD Katolik St. Dyonisius I, SMP Negeri 3 Malang dan SMA Negeri 3 Malang. Melanjutkan ke Institut Teknologi Surabaya pada tahun 1979 dan lulus dengan predikat Suma Cum Laude pada tahun 1984 serta meraih Megister Manajemen dari Sekolah Tinggi Manajemen Prasetya Mulya Jakarta tahun 1995. Beliau merupakan Anggota DPR Komisi XI yang berasal dari Fraksi PDIP.
+          </p>
+          {/* <ul className="text-black-500 self-start list-inside ml-8">
+            {features.map((feature, index) => (
+              <motion.li
+                className="relative circle-check custom-list"
+                custom={{duration: 2 + index}}
+                variants={scrollAnimation}
+                key={feature}
+                whileHover={{
+                scale : 1.1,
+                transition: {
+                  duration: .2
+                }
+                }}>
+                  {feature}
+              </motion.li>
+              )
+            )}
+          </ul> */}
+        </motion.div>
+        </ScrollAnimationWrapper>
+      </div>
+
           <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-3 gap-4 lg:gap-12 py-8 lg:py-12 px-6 sm:px-0 lg:px-6">
             <ScrollAnimationWrapper className="flex justify-center">
               <motion.div

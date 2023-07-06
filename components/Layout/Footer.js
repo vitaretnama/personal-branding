@@ -3,6 +3,7 @@ import Link from "next/link";
 import Facebook from "../../public/assets/Icon/facebook.svg";
 import Twitter from "../../public/assets/Icon/twitter.svg";
 import Instagram from "../../public/assets/Icon/instagram.svg";
+import Youtube from "../../public/assets/Icon/youtube.svg"
 const Footer = () => {
   return (
     <div className="bg-white-300 pt-44 pb-24">
@@ -11,7 +12,7 @@ const Footer = () => {
           <h1 className="text-2xl">Andreas Eddy Susetyo</h1>
           {/* <p className="mb-4">
             <strong className="font-medium">Radius</strong> is a private
-            virtual network that has unique features and has high security.
+            virtual network that has unique features and has high security. 
           </p> */}
           <div className="flex w-full mt-2 mb-8 -mx-2">
             <Link href="https://www.facebook.com/andreas.eddysusetyo">
@@ -21,14 +22,14 @@ const Footer = () => {
                 </div>
               </a>
             </Link>
-            <Link href="https://twitter.com/andreassusetyo">
+            <Link href="https://www.youtube.com/@AndreasEddySusetyo">
               <a target="_blank" rel="noopener noreferrer">
                 <div className="mx-2 bg-white-500 rounded-full items-center justify-center flex p-2 shadow-md">
-                  <Twitter className="h-6 w-6" />
+                  <Youtube className="h-6 w-6" />
                 </div>
               </a>
             </Link>
-            <Link href="https://www.instagram.com/andreas.susetyo/">
+            <Link href="https://www.instagram.com/andreas.susetyo.aes/">
               <a target="_blank" rel="noopener noreferrer">
                 <div className="mx-2 bg-white-500 rounded-full items-center justify-center flex p-2 shadow-md">
                   <Instagram className="h-6 w-6" />
