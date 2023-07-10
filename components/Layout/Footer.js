@@ -4,6 +4,7 @@ import Facebook from "../../public/assets/Icon/facebook.svg";
 import Twitter from "../../public/assets/Icon/twitter.svg";
 import Instagram from "../../public/assets/Icon/instagram.svg";
 import Youtube from "../../public/assets/Icon/youtube.svg"
+import TikTok from "../../public/assets/Icon/tiktok.svg"
 const Footer = () => {
   return (
     <div className="bg-white-300 pt-44 pb-24">
@@ -33,6 +34,13 @@ const Footer = () => {
               <a target="_blank" rel="noopener noreferrer">
                 <div className="mx-2 bg-white-500 rounded-full items-center justify-center flex p-2 shadow-md">
                   <Instagram className="h-6 w-6" />
+                </div>
+              </a>
+            </Link>
+            <Link href="https://www.tiktok.com/@andreas.eddys.aes/">
+              <a target="_blank" rel="noopener noreferrer">
+                <div className="mx-2 bg-white-500 rounded-full items-center justify-center flex p-2 shadow-md">
+                  <TikTok className="h-6 w-6" />
                 </div>
               </a>
             </Link>

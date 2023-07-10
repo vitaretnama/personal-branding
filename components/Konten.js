@@ -16,6 +16,11 @@ const Konten = ({
       link: "https://www.youtube.com/watch?v=xs4ou1pKw78&t=2s",
       text: "Desa Karangkates Rakyat Berdaya, Desa Sejahtera | Bersama Sam Andreas",
     },
+    {
+      image: "/assets/peniwen.png",
+      link: "https://www.youtube.com/watch?v=olqdQ3zAL24",
+      text: "Desa Peniwen Harmonisasi Alam dan Budaya | Bersama Sam Andreas",
+    },
     // {
     //   image: "/assets/perkokoh.jpg",
     //   link: "https://www.youtube.com/watch?v=aviAyIK5oSU", 
