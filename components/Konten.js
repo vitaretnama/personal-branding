@@ -27,20 +27,15 @@ const Konten = ({
       text: "Porsi Bagi Hasil Cukai Tembakau Untuk Masyarakat |Telinga Senayan di Bhumi Arema Bersama Sam Andreas",
     },
     {
-      image: "/assets/THumbnail/YT-5.jpg",
+      image: "/assets/Thumbnail/YT-5.jpg",
       link: "https://www.youtube.com/watch?v=BeWMildppxQ&t=11s",
       text: "Ekonomi Syariah di Indonesia: Raksasa yang Masih Tertidur | Telinga Senayan di Bhumi Arema",
+    },
+    {
+      image: "/assets/Thumbnail/YT-6.jpg",
+      link: "https://www.youtube.com/watch?v=Skw9ORoSC0g",
+      text: "Nawak Milenial Podcast | Menuju Senayan Pertama Kali : Sudah Diprediksi Sejak Umur 20-an",
     }
-    // {
-    //   image: "/assets/perkokoh.jpg",
-    //   link: "https://www.youtube.com/watch?v=aviAyIK5oSU", 
-    //   text: "Andreas Ajak Untuk Memperkokoh Persatuan & Kesatuan Bangsa!",
-    // },
-    // {
-    //   image: "/assets/malang.jpeg",
-    //   link: "https://www.youtube.com/watch?v=aviAyIK5oSU",
-    //   text: "Meriah, Andreas Bangga Atas Terselenggaranya Even “Iki Malang Ker !”",
-    // },
   ],
 }) => {
   const settings = {
