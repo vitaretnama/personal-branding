@@ -159,7 +159,7 @@ const Header = () => {
                   : " border-transparent ")
               }
             >
-              <svg
+              {/* <svg
                 className="w-6 h-6"
                 fill="none"
                 stroke="currentColor"
@@ -172,7 +172,8 @@ const Header = () => {
                   strokeWidth={2}
                   d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
                 />
-              </svg>
+              </svg> */}
+              <img className="w-6 h-6" src="/assets/Icon/paper-document-svgrepo-com.svg" />
               Program Kerja
             </LinkScroll>
             <LinkScroll
@@ -191,7 +192,7 @@ const Header = () => {
                   : " border-transparent ")
               }
             >
-              <svg
+              {/* <svg
                 className="w-6 h-6"
                 fill="none"
                 stroke="currentColor"
@@ -204,7 +205,8 @@ const Header = () => {
                   strokeWidth={2}
                   d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
                 />
-              </svg>
+              </svg> */}
+              <img className="w-6 h-6" src="/assets/Icon/curriculum-portfolio-svgrepo-com.svg" />
               Riwayat Hidup
             </LinkScroll>
             <LinkScroll
@@ -223,7 +225,7 @@ const Header = () => {
                   : " border-transparent ")
               }
             >
-              <svg
+              {/* <svg
                 className="w-6 h-6"
                 fill="none"
                 stroke="currentColor"
@@ -236,7 +238,8 @@ const Header = () => {
                   strokeWidth={2}
                   d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
                 />
-              </svg>
+              </svg> */}
+              <img className="w-6 h-6" src="/assets/Icon/user-speak-rounded-svgrepo-com.svg" />
               Suara Massa
             </LinkScroll>
             <LinkScroll
@@ -255,7 +258,7 @@ const Header = () => {
                   : " border-transparent ")
               }
             >
-              <svg
+              {/* <svg
                 className="w-6 h-6"
                 fill="none"
                 stroke="currentColor"
@@ -268,7 +271,8 @@ const Header = () => {
                   strokeWidth={2}
                   d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
                 />
-              </svg>
+              </svg> */}
+              <img className="w-6 h-6" src="/assets/Icon/article-svgrepo-com.svg" />
               Artikel Opini
             </LinkScroll>
             <LinkScroll
@@ -287,7 +291,7 @@ const Header = () => {
                   : " border-transparent ")
               }
             >
-              <svg
+              {/* <svg
                 className="w-6 h-6"
                 fill="none"
                 stroke="currentColor"
@@ -300,7 +304,8 @@ const Header = () => {
                   strokeWidth={2}
                   d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
                 />
-              </svg>
+              </svg> */}
+              <img className="w-6 h-6" src="/assets/Icon/newspaper-thin-svgrepo-com.svg" />
               Media Massa
             </LinkScroll>
 
