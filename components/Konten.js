@@ -7,25 +7,35 @@ import ArrowNext from "../public/assets/Icon/eva_arrow-next-fill.svg";
 const Konten = ({
   listYoutube = [
     {
-      image: "/assets/karangkates.jpg",
+      image: "/assets/Thumbnail/YT-1.jpg",
       link: "https://www.youtube.com/watch?v=zuxM23vzVPY",
       text: "Desa Karangkates Hidup Damai Melalui Budaya | Bersama Sam Andreas",
     },
     {
-      image: "/assets/karangkatesnew.jpg",
+      image: "/assets/Thumbnail/YT-2.jpg",
       link: "https://www.youtube.com/watch?v=xs4ou1pKw78&t=2s",
       text: "Desa Karangkates Rakyat Berdaya, Desa Sejahtera | Bersama Sam Andreas",
     },
-    // {
-    //   image: "/assets/perkokoh.jpg",
-    //   link: "https://www.youtube.com/watch?v=aviAyIK5oSU", 
-    //   text: "Andreas Ajak Untuk Memperkokoh Persatuan & Kesatuan Bangsa!",
-    // },
-    // {
-    //   image: "/assets/malang.jpeg",
-    //   link: "https://www.youtube.com/watch?v=aviAyIK5oSU",
-    //   text: "Meriah, Andreas Bangga Atas Terselenggaranya Even “Iki Malang Ker !”",
-    // },
+    {
+      image: "/assets/Thumbnail/YT-3.jpg",
+      link: "https://www.youtube.com/watch?v=olqdQ3zAL24",
+      text: "Desa Peniwen Harmonisasi Alam dan Budaya | Bersama Sam Andreas",
+    },
+    {
+      image: "/assets/Thumbnail/YT-4.jpg",
+      link: "https://www.youtube.com/watch?v=0P_LwIPT2bw&t=1s",
+      text: "Porsi Bagi Hasil Cukai Tembakau Untuk Masyarakat |Telinga Senayan di Bhumi Arema Bersama Sam Andreas",
+    },
+    {
+      image: "/assets/Thumbnail/YT-5.jpg",
+      link: "https://www.youtube.com/watch?v=BeWMildppxQ&t=11s",
+      text: "Ekonomi Syariah di Indonesia: Raksasa yang Masih Tertidur | Telinga Senayan di Bhumi Arema",
+    },
+    {
+      image: "/assets/Thumbnail/YT-6.jpg",
+      link: "https://www.youtube.com/watch?v=Skw9ORoSC0g",
+      text: "Nawak Milenial Podcast | Menuju Senayan Pertama Kali : Sudah Diprediksi Sejak Umur 20-an",
+    }
   ],
 }) => {
   const settings = {
@@ -74,7 +84,7 @@ const Konten = ({
         className="flex items-stretch justify-items-stretch"
       >
         {listYoutube.map((listTestimonis, index) => (
-          <a key={index} href={listTestimonis.link}>
+          <a key={index} href={listTestimonis.link} target="_blank">
             <div className="px-3 flex items-stretch" key={index}>
               <div className="border-2 border-gray-500 hover:border-orange-500 transition-all rounded-lg p-10 flex flex-col">
                 <div className="flex flex-col w-full items-stretch xl:items-center ">
@@ -82,9 +92,9 @@ const Konten = ({
                     <Image
                       src={listTestimonis.image}
                       height={200}
-                      width={300}
+                      width={350}
                       className="w-full"
-                      alt="Icon People"
+                      alt="Thumbnail"
                     />
                   </div>
                 </div>

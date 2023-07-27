@@ -7,25 +7,35 @@ import ArrowNext from "../public/assets/Icon/eva_arrow-next-fill.svg";
 const MediaGaleri = ({
   listArtikelOpini = [
     {
-      image: "/assets/malang.jpeg",
+      image: "/assets/News/malang.jpeg",
       link: "https://bangsaonline.com/berita/119162/digelar-dua-hari-iki-malang-ker-suguhkan-berbagai-produk-umkm-kota-malang",
       text: "Digelar Dua Hari, 'Iki Malang Ker' Suguhkan Berbagai Produk UMKM Kota Malang",
     },
     {
-      image: "/assets/jaranan.jpg",
+      image: "/assets/News/jaranan.jpg",
       link: "https://www.gesuri.id/kerakyatan/semarakkan-bulan-bung-karno-andreas-geber-jaranan-di-115-desa-b2hRuZD1i/",
       text: "Semarakkan Bulan Bung Karno, Andreas Geber Jaranan di 115 Desa",
     },
     {
-      image: "/assets/perkokoh.jpg",
+      image: "/assets/News/perkokoh.jpg",
       link: "https://www.gesuri.id/pemerintahan/andreas-ajak-perkokoh-persatuan-amp-kesatuan-bangsa-b2hPAZCYs",
       text: "Andreas Ajak Untuk Memperkokoh Persatuan & Kesatuan Bangsa!",
     },
     {
-      image: "/assets/malang.jpeg",
+      image: "/assets/News/malang.jpeg",
       link: "https://malangposcomedia.id/meriahandreas-bangga-even-iki-malang-ker/",
       text: "Meriah, Andreas Bangga Atas Terselenggaranya Even “Iki Malang Ker !”",
     },
+    {
+      image: "/assets/News/andreas.jpeg",
+      link: "https://getradius.id/news/87589-sam-aes-telinga-senayan-untuk-bhumi-arema",
+      text: "Sam Aes: Telinga Senayan Untuk Bhumi Arema",
+    },
+    {
+      image: "/assets/News/penyuluhan.jpg",
+      link: "https://malangposcomedia.id/andreas-saatnya-ekonomi-syariah-menjadi-pendorong-pertumbuhan/",
+      text: "Andreas: Saatnya, Ekonomi Syariah menjadi Pendorong Pertumbuhan",
+    }
   ],
 }) => {
   const settings = {
@@ -71,7 +81,7 @@ const MediaGaleri = ({
         className="flex items-stretch justify-items-stretch"
       >
         {listArtikelOpini.map((listTestimonis, index) => (
-          <a key={index} href={listTestimonis.link}>
+          <a key={index} href={listTestimonis.link} target="_blank">
             <div className="px-3 flex items-stretch" key={index}>
               <div className="border-2 border-gray-500 hover:border-orange-500 transition-all rounded-lg p-10 flex flex-col">
                 <div className="flex flex-col w-full items-stretch xl:items-center ">
@@ -81,7 +91,7 @@ const MediaGaleri = ({
                       height={200}
                       width={300}
                       className="w-full"
-                      alt="Icon People"
+                      alt="Berita"
                     />
                   </div>
                 </div>
