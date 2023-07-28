@@ -65,7 +65,8 @@ const ArtikelOpini = ({
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1,
+          slidesToScroll: 2,
+          speed: 7000,
         },
       },
     ],
@@ -81,9 +82,9 @@ const ArtikelOpini = ({
         className="flex items-stretch justify-items-stretch"
       >
         {listArtikelOpini.map((listTestimonis, index) => (
-          <a 
-          key={index}
-          href={listTestimonis.link}
+          <a
+            key={index}
+            href={listTestimonis.link}
           >
             <div className="px-3 flex items-stretch" key={index}>
               <div className="border-2 border-gray-500 hover:border-orange-500 transition-all rounded-lg p-10 flex flex-col">

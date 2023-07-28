@@ -65,7 +65,8 @@ const MediaGaleri = ({
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1,
+          slidesToScroll: 2,
+          speed: 10000,
         },
       },
     ],

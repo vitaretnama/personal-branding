@@ -140,7 +140,7 @@ const Header = () => {
       </header>
       {/* Mobile Navigation */}
 
-      <nav className="fixed lg:hidden bottom-0 left-0 right-0 z-20 px-4 sm:px-8 shadow-t text-center">
+      <nav className="fixed lg:hidden bottom-0 left-0 right-0 z-20 px-1 sm:px-8 shadow-t text-center">
         <div className="bg-white-500 sm:px-3">
           <ul className="flex w-full justify-between items-center text-black-500">
             <LinkScroll
@@ -153,7 +153,7 @@ const Header = () => {
                 setActiveLink("program");
               }}
               className={
-                "mx-1 sm:mx-2 px-3 sm:px-2 py-2 flex flex-col items-center text-xs border-t-2 transition-all " +
+                "mx-1 sm:mx-2 px-1 sm:px-2 py-2 flex flex-col items-center text-xs border-t-2 transition-all " +
                 (activeLink === "feature"
                   ? "  border-maroon-500 text-maroon-500"
                   : " border-transparent ")
